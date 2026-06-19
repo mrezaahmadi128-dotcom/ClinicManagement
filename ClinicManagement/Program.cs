@@ -17,7 +17,7 @@ namespace WindowsFormsApp5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmBimaran());
+            Application.Run(new FrmPatients());
         }
     }
 }

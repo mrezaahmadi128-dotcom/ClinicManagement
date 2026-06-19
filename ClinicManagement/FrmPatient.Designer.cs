@@ -1,6 +1,6 @@
 ﻿namespace ClinicManagement
 {
-    partial class FrmAddBimar
+    partial class FrmAddPatient
     {
         /// <summary>
         /// Required designer variable.
@@ -122,7 +122,7 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // FrmAddBimar
+            // FrmAddPatient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -138,9 +138,9 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Margin = new System.Windows.Forms.Padding(5);
-            this.Name = "FrmAddBimar";
-            this.Text = "FrmAddBimar";
-            this.Load += new System.EventHandler(this.FrmAddBimar_Load);
+            this.Name = "FrmAddPatient";
+            this.Text = "FrmAddPatient";
+            this.Load += new System.EventHandler(this.FrmAddPatient_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
