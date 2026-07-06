@@ -27,7 +27,7 @@ namespace ClinicManagement
             
         }
 
-        public string[] PatientValidation(
+        public string[] Validation(
             string firstName,
             string lastName,
             string medicalCouncilNumber
