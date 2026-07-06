@@ -15,7 +15,7 @@ namespace ClinicManagement
         {
             if (Patients == null)
                 Patients = new List<Patient>();
-
+            
             Patients.Add(Patient);
         }
         public void RemovePatient(int index)
@@ -27,6 +27,19 @@ namespace ClinicManagement
                 Patients.RemoveAt(index);
                 System.Windows.Forms.MessageBox.Show("حذف شد");
             }
+        }
+        public List<Patient> Search(string national)
+        {
+            List<Patient> res= new List<Patient>();
+            foreach (Patient patient in Patients)
+            {
+                if (patient.NationalCode == national)
+                {
+                    res.Add(patient);
+                }
+            }
+            return res;
+           
         }
     }
 }

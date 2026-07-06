@@ -34,5 +34,19 @@ namespace ClinicManagement
                 dgvPatient.DataSource= PatientManager.GetPatients().ToList();
             }
         }
+
+        private void txtNational_TextChanged(object sender, EventArgs e)
+        {
+            PatientManager PatientManager = new PatientManager();
+            if (txtNational.Text == "")
+            {
+                dgvPatient.DataSource = PatientManager.GetPatients().ToList();
+            }
+            else
+            {
+                PatientManager.Search(txtNational.Text);
+                dgvPatient.DataSource = PatientManager.Search(txtNational.Text).ToList();
+            }
+        }
     }
 }
