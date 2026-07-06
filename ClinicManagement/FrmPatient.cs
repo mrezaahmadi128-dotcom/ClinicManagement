@@ -14,16 +14,6 @@ namespace ClinicManagement
         {
            
         }
-         bool NationalCodeExist(string Text)
-        {
-            PatientManager PatientManager = new PatientManager();
-            if (PatientManager.NationalCodeExist(Text))
-            {
-                MessageBox.Show("کدملی وارد شده تکراری است", "خطا", MessageBoxButtons.OK);
-                return true;
-            }
-            return false;
-        }
         private void btnSave_Click(object sender, EventArgs e)
         {
             PatientManager PatientManager = new PatientManager();
@@ -41,8 +31,9 @@ namespace ClinicManagement
                 txtNationalCode.Focus();
                 return;
             }
-            if(NationalCodeExist(txtNationalCode.Text))
+            if(PatientManager.NationalCodeExist(txtNationalCode.Text))
             {
+                MessageBox.Show("کدملی وارد شده تکراری است");
                 return;
             }
             Patient Patient = new Patient();
