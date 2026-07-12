@@ -36,15 +36,9 @@ namespace ClinicManagement
                 MessageBox.Show("کدملی وارد شده تکراری است");
                 return;
             }
-            Patient Patient = new Patient();
-            Patient.FirstName = txtName.Text;
-            Patient.LastName = txtLastName.Text;
-            Patient.NationalCode = txtNationalCode.Text;
-            Patient.MobileNumber = txtMobileNumber.Text;
-
+            Patient Patient = new Patient(txtName.Text,txtLastName.Text,txtNationalCode.Text,txtMobileNumber.Text);
            
             PatientManager.AddPatient(Patient);
-<<<<<<< HEAD
             foreach (Control item in this.Controls)
             {
                 if(item is TextBox)
@@ -54,9 +48,8 @@ namespace ClinicManagement
             }
             MessageBox.Show("ذخیره شد","پیام",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
-=======
+
             
->>>>>>> main
         }
 
     }

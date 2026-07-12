@@ -1,17 +1,16 @@
 ﻿namespace ClinicManagement
 {
-    public class Patient
+    public class Patient:Person
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string FullName
+        
+       
+        public string NationalCode { get;private set; }
+        public string MobileNumber { get; private set; }
+        public Patient(string firstName, string lastName, string nationalCode, string mobileNumber)
+            :base(firstName, lastName)
         {
-            get
-            {
-                return FirstName + " " + LastName;
-            }
+            NationalCode = nationalCode;
+            MobileNumber = mobileNumber;
         }
-        public string NationalCode { get; set; }
-        public string MobileNumber { get; set; }
     }
 }

@@ -33,9 +33,7 @@ namespace ClinicManagement
             
             Patients.Add(Patient);
         }
-<<<<<<< HEAD
-        
-=======
+
         public void RemovePatient(int index)
         {
             if (Patients == null)
@@ -59,6 +57,5 @@ namespace ClinicManagement
             return res;
            
         }
->>>>>>> main
     }
 }

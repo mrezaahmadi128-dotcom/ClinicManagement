@@ -48,5 +48,11 @@ namespace ClinicManagement
                 dgvPatient.DataSource = PatientManager.Search(txtNational.Text).ToList();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var frm = new FrmDoctors();
+            frm .ShowDialog();
+        }
     }
 }
