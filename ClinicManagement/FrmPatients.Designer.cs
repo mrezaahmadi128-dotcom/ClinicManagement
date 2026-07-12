@@ -39,6 +39,7 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtNational = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPatient)).BeginInit();
             this.SuspendLayout();
             // 
@@ -156,12 +157,23 @@
             this.button1.Text = "view doctors";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+<<<<<<< HEAD
+=======
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(263, 12);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 3;
+>>>>>>> 8b155cce0448b0d328e0146ea79ca62241b7f8a0
             // 
             // FrmPatients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtNational);
             this.Controls.Add(this.btnAdd);
@@ -186,7 +198,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MobileNumber;
         private System.Windows.Forms.DataGridViewButtonColumn ColEdit;
         private System.Windows.Forms.DataGridViewButtonColumn ColDelete;
+<<<<<<< HEAD
         private System.Windows.Forms.TextBox txtNational;
         private System.Windows.Forms.Button button1;
+=======
+        private System.Windows.Forms.TextBox textBox1;
+>>>>>>> 8b155cce0448b0d328e0146ea79ca62241b7f8a0
     }
 }

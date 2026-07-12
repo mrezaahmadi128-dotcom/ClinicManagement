@@ -12,6 +12,10 @@ namespace ClinicManagement
 {
     public partial class FrmDoctors : Form
     {
+        DoctorManager DoctorManager = new DoctorManager();
+
+        Doctor doctor;
+
         public FrmDoctors()
         {
             InitializeComponent();
@@ -72,6 +76,7 @@ namespace ClinicManagement
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-        }
+
+      }
     }
 }
